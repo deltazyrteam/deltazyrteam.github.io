@@ -287,10 +287,10 @@ body.theme-default {
     --radio--selected--border-color: var(--primary-400);
     --radio--selected--background-color: var(--primary-400);
     --slider--background-color: linear-gradient(to right, var(--whitel85) 0%, var(--whitel85) 100%);
-    --skeleton--background-color: #d9d9d9;
+    /* --skeleton--background-color: #d9d9d9; */
     --skeleton--background-image: linear-gradient(90deg, #f2f2f21a, #f2f2f233, #f2f2f24d, #f2f2f21a);
-    --skeleton_light--background-color: var(--skeleton--background-color);
-    --skeleton_light--background-image: var(--skeleton--background-image);
+    /* --skeleton_light--background-color: var(--skeleton--background-color); */
+    /* --skeleton_light--background-image: var(--skeleton--background-image); */
     --spinner--foreground-color: var(--white);
     --spinner--background-color: var(--primary-400a50);
     --summary_header--background-color: #e8e8e8;
