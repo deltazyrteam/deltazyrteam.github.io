@@ -4573,8 +4573,13 @@ table td {
     .wrapper {
         height: auto!important;
     }
-    
-     
+         
+    html {
+        color-scheme: dark;
+    }
+}
+
+@media (min-width: 100px) {
     html {
         color-scheme: dark;
     }
