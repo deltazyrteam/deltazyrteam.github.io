@@ -4637,7 +4637,7 @@ table td {
 
 
 @media (min-width:200px) {
-    .prefers-color-scheme {
+    .html {
         color-scheme: dark;
     }
 }
