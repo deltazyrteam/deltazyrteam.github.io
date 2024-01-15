@@ -135,7 +135,7 @@ body.theme-default {
     --whitel98: #fafafa;
     --page--text-color: var(--text-400);
     --page--background-color: var(--whitel05);
-    --layout--home--background-color: var(--whitel98);
+    /* --layout--home--background-color: var(--whitel98); */
     --font-weight--bold: var(--bold);
     --font-weight--semi-bold: var(--semi-bold);
     --font-weight--normal: var(--normal);
@@ -472,7 +472,7 @@ body.theme-chad {
     --warning-text-400: #ba9308;
     --page--text-color: var(--text-600);
     --page--background-color: var(--primary-700);
-    --layout--home--background-color: var(--white);
+    /* --layout--home--background-color: var(--white); */
     --active--background-color: var(--primary-100);
     --active--border-color: var(--primary-100);
     --active_filled--background-color: var(--black);

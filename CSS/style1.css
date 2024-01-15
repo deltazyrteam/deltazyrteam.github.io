@@ -16,7 +16,7 @@
     --callout-rgb: 238, 240, 241;
     --callout-border-rgb: 172, 175, 176;
     --card-rgb: 180, 185, 188;
-    --card-border-rgb: 131, 134, 135
+    --card-border-rgb: 131, 134, 135;
 }
 
 @media(prefers-color-scheme:dark) {
@@ -32,7 +32,7 @@
         --callout-rgb: 20, 20, 20;
         --callout-border-rgb: 108, 108, 108;
         --card-rgb: 100, 100, 100;
-        --card-border-rgb: 200, 200, 200
+        --card-border-rgb: 200, 200, 200;
     }
 }
 
@@ -460,6 +460,9 @@ iframe pre {
 
 @media(prefers-color-scheme:dark) {
     html {
+        color-scheme: dark
+    }
+    body {
         color-scheme: dark
     }
 }
@@ -4612,6 +4615,7 @@ table td {
     }
 }
 
+
 @media screen and (min-width: 200px) {
     .connected-user-button {
         height: 28px;
@@ -4625,22 +4629,14 @@ table td {
         height: auto!important;
     }
     
-    @media (prefers-color-scheme: dark) {        
-        body {
-            color-scheme: dark;
-        }
-    }
-}
-
-@media screen and (min-resolution: 192dpi) {
-    body {        
+     
+    html {
         color-scheme: dark;
     }
 }
 
 
-
-@media (min-width:300px) {
+@media (min-width:200px) {
     .prefers-color-scheme {
         color-scheme: dark;
     }
