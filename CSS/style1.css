@@ -405,66 +405,11 @@ iframe pre {
     display: none;
 }
 
-.hZxDDq {
-    display: inline-block;
-    position: relative;
-    width: 16px;
-    height: 16px;
-}
-
-.hZxDDq div:nth-child(1) {
-    animation-delay: -0.45s;
-}
-
-.hZxDDq div:nth-child(2) {
-    animation-delay: -0.3s;
-}
-
-.hZxDDq div:nth-child(3) {
-    animation-delay: -0.15s;
-}
-
-.hZxDDq div {
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-top-style: ;
-    border-top-width: ;
-    border-right-style: ;
-    border-right-width: ;
-    border-bottom-style: ;
-    border-bottom-width: ;
-    border-left-style: ;
-    border-left-width: ;
-    border-image-source: ;
-    border-image-slice: ;
-    border-image-width: ;
-    border-image-outset: ;
-    border-image-repeat: ;
-    animation-timeline: auto;
-    animation-range-start: normal;
-    animation-range-end: normal;
-    margin: 2px;
-    border-radius: 50%;
-    animation: 1.2s cubic-bezier(0.5, 0, 0.5, 1) 0s infinite normal none running cilQsd;
-    border-color: var(--border-400) transparent transparent transparent;
-}
-
 .ant-radio-wrapper.full-width-radio>span:nth-child(2) {
     flex: 1 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-@media(prefers-color-scheme:dark) {
-    html {
-        color-scheme: dark
-    }
-    body {
-        color-scheme: dark
-    }
 }
 
 .mixpay-btn {
@@ -4631,13 +4576,6 @@ table td {
     
      
     html {
-        color-scheme: dark;
-    }
-}
-
-
-@media (min-width:200px) {
-    .html {
         color-scheme: dark;
     }
 }
