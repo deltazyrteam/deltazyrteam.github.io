@@ -439,8 +439,9 @@ iframe pre {
     padding: 10px 16px;
     font-size: 18px;
     transition: all .2s ease-in-out;
-    color: #000
+    color: #000;
 }
+
 
 .button.mixpay {
     background-color: #0049f9;
@@ -3766,7 +3767,7 @@ table td {
 }
 
 .inscription {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .inscription .container {
@@ -9346,6 +9347,7 @@ table.action-table tbody tr td.link.main {
 
 .inscription {
     display: flex;
+
     align-items: center;
     font-size: 32px;
     justify-content: center;
@@ -9358,6 +9360,7 @@ table.action-table tbody tr td.link.main {
     font-weight: bold;
     position: relative;
     animation: blink 2s infinite;
+    text-align: center;
 }
 
 .inscription-text::before {
@@ -9365,6 +9368,13 @@ table.action-table tbody tr td.link.main {
     position: absolute;
     border-radius: 50%;
     animation: flame 2s infinite alternate; 
+}
+
+@media (max-width: 635px) {
+    .inscription {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @keyframes blink {
