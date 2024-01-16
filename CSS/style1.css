@@ -90,7 +90,8 @@ body {
     min-height: calc(100vh - 188px);
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0
+    padding: 0;
+    margin-top: 60px;
 }
 
 @media(max-width:1312px) {
@@ -262,6 +263,7 @@ iframe pre {
     max-width: var(--width);
     min-height: calc(100vh - 120.672px);
     width: 100%;
+    margin-top: 60px;
 }
 
 .dVUaNF {
@@ -627,11 +629,14 @@ iframe pre {
 }
 
 @media(max-width:765px) {
-
     .font-26.response,
     .font26.response {
         font-size: 18px
     }
+    .kwkBUa{
+        margin-top: 0;
+    }
+
 }
 
 @media(max-width:475px) {
@@ -644,6 +649,9 @@ iframe pre {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .kwkBUa{
+        margin-top: 39px;
     }
 }
 
@@ -1814,7 +1822,7 @@ table td {
 
 @media(max-width:765px) {
     .home .mt64 {
-        margin-top: 32px
+        margin-top: 140px
     }
 
     .home .p32,
@@ -3758,7 +3766,7 @@ table td {
 }
 
 .inscription {
-    padding: 40px 16px
+    padding-bottom: 40px;
 }
 
 .inscription .container {
@@ -7198,7 +7206,7 @@ table.action-table tbody tr td.link.main {
 
 .mt-64,
 .mt64 {
-    margin-top: 64px
+    margin-top: 160px
 }
 
 .mt-48,
@@ -9015,6 +9023,9 @@ table.action-table tbody tr td.link.main {
 
 .Header_header__R_kkv {
     display: flex;
+    position: relative;
+    z-index: 999; 
+    margin-top: 60px;
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
@@ -9260,8 +9271,15 @@ table.action-table tbody tr td.link.main {
 
     .Header_headerBlock__BvKxA,
     .Header_header__R_kkv {
-        height: 54px
+        height: 54px;
+        margin-top: 54px;
     }
+
+    .alert-banner {
+        height: 54px!important;
+        font-size: 14px!important;
+    }
+
 
     .Header_headerLeft__5o9CR .Header_smallLogo__oEnv8 {
         transform: scale(.8)
@@ -9291,8 +9309,13 @@ table.action-table tbody tr td.link.main {
 
 @media(max-width:475px) {
     .Header_header__R_kkv {
-        height: 42px;
-        padding: 0 8px
+        height: 51px;
+        margin-top: 50px;
+    }
+
+    .alert-banner {
+        height: 51px!important;
+        font-size: 12px!important;
     }
 
     .Header_smallLogo__oEnv8 {
@@ -9300,7 +9323,7 @@ table.action-table tbody tr td.link.main {
     }
 
     .Header_headerBlock__BvKxA {
-        height: 48px
+        height: 8px
     }
 
     .Header_linkContainer__IRPSl {
@@ -9321,6 +9344,43 @@ table.action-table tbody tr td.link.main {
     }
 }
 
+.inscription {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+
+}
+
+.inscription-text{
+    font-weight: bold;
+    position: relative;
+    animation: blink 2s infinite;
+}
+
+.inscription-text::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: flame 2s infinite alternate; 
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+        color: 0 0 5px 5px rgba(255, 127, 0, 0.8)
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 20px 20px rgba(255, 127, 0, 0);
+    }
+}
+
 @media(max-width:375px) {
     .Header_header__R_kkv {
         height: 36px;
@@ -9328,7 +9388,7 @@ table.action-table tbody tr td.link.main {
     }
 
     .Header_headerBlock__BvKxA {
-        height: 36px
+        height: 3px
     }
 
     .Header_linkContainer__IRPSl {
@@ -9342,6 +9402,9 @@ table.action-table tbody tr td.link.main {
 
     .Header_rightLogo__example {
         display: none;
+    }
+    .kwkBUa{
+        margin-top: 29px;
     }
 }
 
@@ -9436,11 +9499,14 @@ table.action-table tbody tr td.link.main {
     gap: 1rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 766px) {
     .chain-list-wrapper {
       grid-template-columns: 1fr 1fr;
     }
     
+    .wrapper {
+        margin-top: 60px;
+    }
     .Home-latest-info-container {
         display: flex;
         align-items: center;
@@ -10126,6 +10192,7 @@ a.button.border-btn.no-underline:hover {
 @media screen and (min-width:991px) {
     .wrapper{
         height: calc(100vh - 100px)!important;
+        margin-top: 60px;
     }
 }
 
@@ -10163,4 +10230,24 @@ a.button.border-btn.no-underline:hover {
     left: 0;
     z-index: 1000;
 }
+
+.alert-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: #000;
+    text-align: center;
+    line-height: 100%;
+    overflow: hidden; 
+    font-size: 18px;
+    padding: 10px 20px;
+    height: 60px;
+}
+
 
