@@ -4,7 +4,7 @@
 <head>
     <meta charSet="utf-8" />
     <title>Swap</title>
-    <meta name="Δzyr (Delta Zyr)" content="Δzyr - Defi Bitcoin Ecosystem with Delta Zyr" />
+    <meta name="Δzr (Delta Zyr)" content="Δzr - Defi Bitcoin Ecosystem with Delta Zyr" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./CSS/img/favicon.svg" />
     <meta name="next-head-count" content="5" />
@@ -31,10 +31,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Δzyr - Defi Bitcoin Ecosystem with Delta Zyr">
+    <meta property="og:title" content="Δzr - Defi Bitcoin Ecosystem with Delta Zyr">
     <meta property="og:locale" content="en_US">
     <meta property="og:description" content="Bringing DeFi to the Bitcoin ecosystem, facilitating faster and easier transactions, and generating profits by providing liquidity">
-    <meta property="og:site_name" content="Δzyr">
+    <meta property="og:site_name" content="Δzr">
     <meta property="og:image" content="https://aldeneth.github.io/delta_zyr/CSS/img/og_image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -243,7 +243,7 @@
                                                                     labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "2024"],
                                                                     datasets: [{
                                                                         label: "ORDI / BTC",
-                                                                        data: [0.0005, 0.00025, 0.00021, 0.00018, 0.00013, 0.00014, 0.00057, 0.0019, 0.0015],
+                                                                        data: [0.0005, 0.00025, 0.00021, 0.00018, 0.00013, 0.00014, 0.00057, 0.0019, 0.0017],
                                                                         backgroundColor: "rgb(247,147,26)",
                                                                         borderColor: "rgb(247,147,26, 1)",
                                                                         borderWidth: 2,
@@ -269,8 +269,8 @@
                                                                                 color: 'white'
                                                                             },
                                                                             grid: {
-                                                                            color: 'rgba(255, 255, 255, 0.1)'
-                                                                        }
+                                                                                color: 'rgba(255, 255, 255, 0.1)'
+                                                                            }
                                                                         },
                                                                         y: {
                                                                             title: {
@@ -282,12 +282,27 @@
                                                                                 color: 'white'
                                                                             },
                                                                             grid: {
-                                                                            color: 'rgba(255, 255, 255, 0.1)' 
+                                                                                color: 'rgba(255, 255, 255, 0.1)'
+                                                                            }
                                                                         }
+                                                                    },
+                                                                    plugins: {
+                                                                        tooltip: {
+                                                                            callbacks: {
+                                                                                label: function (context) {
+                                                                                    var label = context.dataset.label || '';
+
+                                                                                    if (label) {
+                                                                                        label += ': ';
+                                                                                    }
+
+                                                                                    label += parseFloat(context.parsed.y).toFixed(5);
+                                                                                    return label;
+                                                                                }
+                                                                            }
                                                                         }
                                                                     }
                                                                 };
-
                                                                 var btcChart = new Chart(ctx, {
                                                                     type: "line",
                                                                     data: chartData,
@@ -323,7 +338,7 @@
                     </div>
                     <div class="col-log-12 doc">
                         <article class="doc_swap">
-                            <p class="f-700">What is Δzyr Swap?</p>
+                            <p class="f-700">What is Δzr Swap?</p>
 
                             <p>Featuring a simple interface and user friendly design, familiar operation as on EVM. </p>
 

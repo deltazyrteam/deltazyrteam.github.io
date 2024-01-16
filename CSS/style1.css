@@ -9596,12 +9596,6 @@ ul.svelte-166mr51 {
     }
 }
 
-/* .bn-notify-custom.bn-notify-dark-mode {
-    background: #283944;
-    /* color: #ffffff; */
-    background: rgba(40, 57, 68, 0.9)
-} */
-
 .bn-notify-clickable:hover {
     cursor: pointer
 }
@@ -10022,7 +10016,7 @@ svg.svelte-1ociadw {
     flex-direction: column;
     position: relative;
     width: 800px;
-    min-height: 300px;
+    min-height: 350px;
     padding-bottom: var(--spacing-3);
 }
 
