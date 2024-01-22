@@ -1,0 +1,112 @@
+.sliver_page {
+    margin: 40px 20px;
+}
+
+.page_title {
+    font-size: 32px; 
+    text-align: center; 
+}
+
+.text-meta {
+    color: #888;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-primary {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-y-5 {
+    margin-bottom: 20px; 
+}
+
+.lg {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.layout-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-left {
+    margin-left: 15px;
+}
+
+.search-right {
+    display: flex;
+    align-items: center;
+}
+
+.list-filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter-item {
+    border-radius: 6px;
+    padding: 0 4px;
+    background: #3b3b3b;
+    display: flex;
+    grid-gap: 6px;
+    gap: 6px;
+    flex-wrap: wrap;
+    line-height: 36px;
+    margin-left: 50px;
+}
+
+.el-radio-button {
+    cursor: pointer;
+    flex: 50; 
+}
+
+.el-radio-button__inner,.el-radio-button--small {
+    border-radius: 6px;
+    background-color: var(--bg-3);
+    color: var(--font-main-color);
+    border: 1px solid transparent;
+    padding: 0 15px;
+    line-height: 26px;
+}
+
+.el-radio-button, .el-radio-button__inner {
+    display: inline-block;
+    position: relative;
+    outline: 0;
+}
+
+.el-radio-button.is-active {
+    background-color: orange;
+    color: white;
+}
+
+.filter-search {
+    flex: 2; 
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+.bw-input {
+    flex: 1; 
+    margin-right: 50px; 
+    min-width: 400PX;
+}
+.text-right,.text-left {
+    color: #fff;
+}
+
